@@ -8,5 +8,4 @@ app.use(json());
 app.use(cors());
 app.use(router);
 
-
 app.listen(5000);
