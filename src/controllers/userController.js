@@ -1,10 +1,8 @@
-import bcrypt from 'bcrypt';
 import { v4 as uuid } from 'uuid';
 import dayjs from 'dayjs';
-import db from '../db.js';
+import db from '../database.js';
 
 export async function createPurchase(req, res) {
-  //{products: [product, product], totalPrice}
   const purchase = req.body;
   const { user } = res.locals;
 
