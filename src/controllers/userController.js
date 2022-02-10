@@ -22,7 +22,6 @@ export async function createPurchase(req, res) {
 
     res.sendStatus(201);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(500);
   }
 }
@@ -33,6 +32,6 @@ export async function getUser(req, res) {
   if (!user) {
     return res.sendStatus(401);
   }
-
+  
   return res.sendStatus(200);
 }
