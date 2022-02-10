@@ -20,7 +20,8 @@ export async function signUp(req, res) {
             { 
                 "name": stripHtml(name).result.trim(),
                 "email": stripHtml(email).result.trim(),
-                "password": hashSenha
+                "password": hashSenha, 
+                "purchases": []
             }
         );
             
